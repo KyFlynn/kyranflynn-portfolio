@@ -29,6 +29,6 @@ module.exports = function (eleventyConfig) {
       includes: "_includes",
       output: "_site"
     },
-    pathPrefix: "/kyran-portfolio/",
+    pathPrefix: "/kyranflynn-portfolio/",
   };
 };
