@@ -10,7 +10,7 @@ module.exports = function (eleventyConfig) {
   });
 
   // Create a collection for all project files
-  eleventyConfig.addCollection("projects", function (collectionApi) {
+  eleventyConfig.addCollection("projects", function(collectionApi) {
     return collectionApi.getFilteredByGlob("projects/*.md");
   });
 
@@ -25,6 +25,7 @@ module.exports = function (eleventyConfig) {
       input: ".",
       includes: "_includes",
       output: "_site"
-    }
+    },
+    pathPrefix: "/kyran-portfolio/",
   };
 };
