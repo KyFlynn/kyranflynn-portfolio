@@ -1,11 +1,8 @@
 ---
-layout: base.njk
-title: Graph-based RL for Combinatorial MDPs
-summary: Using GNN-based Q-learning to handle large binary sub-action spaces.
-tags: projects
+title: "Graph-based RL for Combinatorial MDPs"
+summary: "Using GNN-based Q-learning to handle large binary sub-action spaces."
+layout: layouts/project.njk
 ---
-
-## Graph-based RL for Combinatorial MDPs
 
 This project explores reinforcement learning for combinatorial decision spaces, where the agent selects multiple binary sub-actions simultaneously. 
 

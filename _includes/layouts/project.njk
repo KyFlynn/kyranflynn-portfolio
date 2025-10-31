@@ -1,0 +1,15 @@
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+  <div class="max-w-3xl mx-auto px-6 pt-4 pb-4 text-neutral-100 text-left">
+    <a href="/" class="inline-block mb-6 text-neutral-400 hover:text-neutral-200 transition">
+      ← Back to Portfolio
+    </a>
+
+    <h1 class="text-3xl font-bold mb-4">{{ title }}</h1>
+
+    <div class="prose prose-invert max-w-none">
+      {{ content | safe }}
+    </div>
+  </div>
+{% endblock %}

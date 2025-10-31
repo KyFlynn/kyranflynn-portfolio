@@ -9,13 +9,16 @@ module.exports = function (eleventyConfig) {
     return DateTime.fromJSDate(value).toFormat(format);
   });
 
+  // Create a collection for all project files
+  eleventyConfig.addCollection("projects", function (collectionApi) {
+    return collectionApi.getFilteredByGlob("projects/*.md");
+  });
+
   // Copy styles to output
   eleventyConfig.addPassthroughCopy("styles/output.css");
 
-    // Collection: all Markdown files tagged "projects"
-  eleventyConfig.addCollection("projects", (collection) => {
-    return collection.getFilteredByTag("projects");
-  });
+  // Copy images folder
+  eleventyConfig.addPassthroughCopy("images");
 
   return {
     dir: {
