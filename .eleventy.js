@@ -9,6 +9,9 @@ module.exports = function (eleventyConfig) {
     return DateTime.fromJSDate(value).toFormat(format);
   });
 
+  // Ensure Tailwind output gets copied to the final site
+  eleventyConfig.addPassthroughCopy("styles");
+
   // Create a collection for all project files
   eleventyConfig.addCollection("projects", function(collectionApi) {
     return collectionApi.getFilteredByGlob("projects/*.md");
