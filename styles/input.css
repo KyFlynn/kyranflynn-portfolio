@@ -154,16 +154,21 @@
   }
 }
 
-@layer base {
+@layer utilities {
+  /* cleaner bullet alignment */
+  .card ul,
   .prose ul {
-    list-style: disc;
-    list-style-position: outside;
-    margin-left: 1.25rem;
+    list-style-type: disc;
+    list-style-position: outside; /* bullet sits left of text */
+    margin-left: 1rem;             /* smaller indentation */
+    padding-left: 0;               /* prevent extra offset */
   }
 
+  .card ol,
   .prose ol {
-    list-style: decimal;
+    list-style-type: decimal;
     list-style-position: outside;
-    margin-left: 1.25rem;
+    margin-left: 1rem;
+    padding-left: 0;
   }
 }
