@@ -154,12 +154,16 @@
   }
 }
 
-@layer utilities {
-  /* ensure bullets render inside project-page cards */
-  .prose .card ul {
-    @apply list-disc list-outside pl-5 mt-2 space-y-1;
+@layer base {
+  .prose ul {
+    list-style: disc;
+    list-style-position: outside;
+    margin-left: 1.25rem;
   }
-  .prose .card li {
-    @apply leading-relaxed;
+
+  .prose ol {
+    list-style: decimal;
+    list-style-position: outside;
+    margin-left: 1.25rem;
   }
 }
