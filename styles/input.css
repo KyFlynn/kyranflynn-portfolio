@@ -3,13 +3,158 @@
 @tailwind utilities;
 
 @layer base {
+  /* markdown header and paragraph styling */
   h1 {
-    @apply text-3xl font-bold mb-4;
+    @apply text-3xl font-bold mb-6 text-left;
   }
   h2 {
-    @apply text-2xl font-semibold mt-10 mb-4 text-center;
+    @apply text-xl font-semibold mt-4 mb-4 text-left text-neutral-100;
   }
-  p {
-    @apply text-gray-300 leading-relaxed;
+  h3 {
+    @apply text-base font-semibold text-neutral-200 mb-2;
+  }
+
+  /* default link styling for text (non-card) */
+  main p a,
+  main li a,
+  .prose a,
+  .card p a,
+  .experience-entry a {
+    @apply text-blue-400 underline font-normal hover:text-blue-500;
+  }
+
+  /* reset links that act as navigation/buttons/cards */
+  nav a,
+  header a,
+  footer a,
+  .project-card a {
+    @apply no-underline text-neutral-100 hover:text-white font-normal;
   }
 }
+
+@layer components {
+  /* Project meta block (labels + links) */
+  .meta { @apply space-y-2 mt-4 mb-8; }
+  .meta p { @apply leading-relaxed text-neutral-300; }
+
+  /* Keep section headers (Key Idea, Program, Tech Stack) blue */
+  /* .meta p > strong:first-child { @apply text-blue-700 font-semibold; } */
+
+  /* Neutralize links (match paragraph color, not bright blue) */
+  .meta a {
+    @apply text-neutral-300 underline font-normal hover:text-neutral-100 transition-colors duration-200;
+  }
+}
+
+@layer components {
+  /* Content cards for project detail pages (Overview, Implementation, etc.) */
+  .card {
+    @apply rounded-lg border border-neutral-700 bg-neutral-800/20 p-6 mb-6 
+           text-neutral-300; /* neutral style, no hover */
+  }
+
+  .card h2, .card h3 {
+    @apply mt-0 text-white;
+  }
+
+  .card p, .card li {
+    @apply text-neutral-300 leading-relaxed;
+  }
+
+  .card a {
+    @apply text-neutral-300 underline font-normal hover:text-neutral-100 transition-colors duration-200;
+  }
+
+  /* Project cards on homepage — keep distinct visual identity */
+  .project-card {
+    @apply block rounded-xl border border-blue-600/30 bg-neutral-800/40 p-6 text-center 
+           hover:border-blue-600/60 hover:-translate-y-0.5 transition duration-300 
+           text-neutral-100 hover:shadow-none;
+  }
+
+  .project-card h3 {
+    @apply font-semibold text-lg mb-3 text-white;
+  }
+
+  .project-card p {
+    @apply text-neutral-300 text-sm leading-relaxed;
+  }
+}
+
+
+@layer components {
+  /* Experience section */
+  .experience-entry {
+    @apply border-t border-neutral-700 pt-4 mt-4 text-left;
+  }
+
+  .experience-entry:first-child {
+    @apply border-t-0 mt-0 pt-0;
+  }
+
+  /* Title line (company + date inline) */
+  .xp-head {
+    @apply flex items-baseline justify-between gap-4;
+  }
+
+  .company {
+    @apply text-white text-lg font-semibold;
+  }
+
+  .role {
+    @apply text-neutral-400 text-base mt-1 mb-2;
+  }
+
+  .experience-entry .date {
+    @apply text-neutral-400 text-sm italic shrink-0 ml-4;
+  }
+
+  /* Keep text subtle gray, but emphasize bold parts */
+  .experience-entry p,
+  .experience-entry li {
+    @apply text-neutral-300 leading-relaxed;
+  }
+
+  /* Restore inline emphasis (no line breaks, subtle gray tone) */
+  .experience-entry em {
+    @apply text-neutral-400 not-italic;
+  }
+
+  /* Remove block behavior from markdown emphasis */
+  .experience-entry p em:first-child {
+    display: inline;
+  }
+
+  .experience-entry a {
+    @apply text-neutral-300 underline font-normal hover:text-neutral-100 transition-colors duration-200;
+  }
+
+  .experience-entry ul {
+    @apply list-disc list-inside mt-1 space-y-1;
+  }
+}
+
+@layer components {
+  .education-grid {
+    @apply grid grid-cols-1 md:grid-cols-2 gap-4 mt-2; /* smaller gap and top margin */
+  }
+
+  .education-grid > div {
+    @apply rounded-lg border border-neutral-700 bg-neutral-800/20 p-5 
+           text-neutral-300; /* neutral background and border */
+    /* remove hover effects */
+  }
+
+  .education-grid h3 {
+    @apply text-white font-semibold text-lg mb-1;
+  }
+
+  .education-grid p {
+    @apply text-neutral-300 text-sm leading-relaxed mb-1;
+  }
+
+  .education-grid em {
+    @apply text-neutral-400 not-italic text-sm;
+  }
+}
+
