@@ -23,6 +23,9 @@ module.exports = function (eleventyConfig) {
   // Copy images folder
   eleventyConfig.addPassthroughCopy("images");
 
+  // Publish to correct domain
+  eleventyConfig.addPassthroughCopy("CNAME");
+
   return {
     dir: {
       input: ".",
