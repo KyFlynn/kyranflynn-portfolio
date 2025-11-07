@@ -8,7 +8,13 @@ module.exports = {
     "./projects/**/*.md"
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        neutral: {
+          850: '#1b1b1b', // between 800 and 900 for soft contrast
+        },
+      },
+    },
   },
   plugins: [],
 };

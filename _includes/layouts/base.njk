@@ -16,7 +16,7 @@
     </nav>
   </header>
 
-  <main class="max-w-3xl mx-auto px-6 pt-4 pb-2 text-center">
+  <main class="{{ class | default('') }} max-w-3xl mx-auto px-6 pt-4 pb-2 text-center">
     {% block content %}{{ content | safe }}{% endblock %}
   </main>
 

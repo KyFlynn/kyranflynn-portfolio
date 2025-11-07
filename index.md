@@ -1,23 +1,61 @@
 ---
 layout: layouts/base.njk
 title: Portfolio
+class: home
 ---
 
-<h1 class="text-2xl font-bold mb-4 mt-0">Welcome to my portfolio!</h1>
+# <div class="text-center">Welcome to my portfolio<span class="text-blue-600">.</span></div>
 
-<p class="leading-relaxed text-gray-300">
-I've studied and implemented algorithmic reasoning and data-driven decision making across both industry and academia. I currently work at the intersection of causal learning and artificial intelligence.
-</p>
+I've studied and implemented algorithmic reasoning and data-driven decision making across both industry and academia. Here are my top projects.
 
-<hr class="my-6 mt-4 border-gray-700">
+<div class="mt-6"></div>
 
-<h2 class="text-2xl font-semibold mb-4 mt-4">Projects</h2>
-
-<div class="grid gap-6 md:grid-cols-2">
-  {% for project in collections.projects %}
-  <a href="{{ project.url }}" class="block border border-gray-700 rounded-xl p-6 hover:shadow-lg transition">
-    <h3 class="mt-0 mb-3 font-semibold text-xl">{{ project.data.title }}</h3>
-    <p class="m-0 text-gray-400">{{ project.data.summary }}</p>
+<div class="grid gap-6 md:grid-cols-2 mt-6">
+{% for project in collections.projects %}
+  <a href="{{ project.url }}" class="project-card">
+    <h3>{{ project.data.title }}</h3>
+    <p>{{ project.data.summary }}</p>
   </a>
-  {% endfor %}
+{% endfor %}
+</div>
+
+<div class="mt-12"></div>
+
+## Education
+
+<div class="education-grid">
+
+<div>
+
+### Columbia University
+M.Sc. in Operations Research  
+*Obtained October 2025, Qualified for Ph.D.*
+
+</div>
+
+<div>
+
+### Brown University
+B.Sc. in Applied Math & Computer Science  
+*Graduated with honors in May 2023*  
+
+</div>
+
+</div>
+
+
+## Experience
+
+<div class="experience-entry">
+
+<div class="xp-head">
+  <span class="company">Columbia University</span>
+  <span class="date">Aug 2024 — now</span>
+</div>
+<div class="role">PhD Student</div>
+
+*First year:* Accelerated M.Sc. for PhD qualification in PhD-only theoretical stochastic modeling and optimization classes. Qualified with 3.73 GPA, [M.SC. degree](https://www.parchment.com/u/award/4969b3e229be08ec1f594c8fd94f1f39) obtained October 2025.  
+
+*Second year:* Full time researcher under [Prof. Lily Xu](https://lily-x.github.io/), teaching assistant for Machine Learning under [Prof. Christian Kroer](https://www.columbia.edu/~ck2945/).
+
 </div>
