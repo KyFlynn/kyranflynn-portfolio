@@ -7,11 +7,6 @@ module.exports = {
     "./_includes/**/*.{njk,html}",
     "./projects/**/*.md"
   ],
-  safelist: [
-    {
-      pattern: /card/,
-    },
-  ],
   theme: {
     extend: {
       colors: {

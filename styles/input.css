@@ -54,9 +54,6 @@
 
   .card h2, .card h3 { @apply mt-0 text-white; }
 
-  /* ➜ make unordered lists actually show bullets */
-  .card ul { @apply list-disc list-outside ml-5 mt-2 space-y-1; }
-
   .card p, .card li { @apply text-neutral-300 leading-relaxed; }
 
   .card a { @apply text-neutral-300 underline font-normal hover:text-neutral-100 transition-colors duration-200; }
@@ -154,32 +151,50 @@
   }
 }
 
-@layer utilities {
-  /* cleaner bullet alignment */
-  .card ul,
-  .prose ul {
-    list-style-type: disc;
-    list-style-position: outside; /* bullet sits left of text */
-    margin-left: 1rem;             /* smaller indentation */
-    padding-left: 0;               /* prevent extra offset */
+@layer components {
+  /* Bullet card: same chrome as .card, bullets via ::before */
+  .bullet-card {
+    @apply rounded-lg border border-neutral-700 bg-neutral-800/20 p-6 mb-6 text-neutral-300;
   }
 
-  .card ol,
-  .prose ol {
-    list-style-type: decimal;
-    list-style-position: outside;
-    margin-left: 1rem;
-    padding-left: 0;
+  /* Inherit the same h2 spacing as a normal .card:
+     - we don't override mb here, so global h2 => mb-4 applies (same as Overview) */
+  .bullet-card h2 {
+    @apply text-white text-xl font-semibold mt-0;
+    /* no mb override → keeps the same mb-4 the Overview card has */
+  }
+
+  /* Bullet lines (each <p>) */
+  .bullet-card p {
+    @apply text-neutral-300 leading-relaxed;
+    margin: 0;                 /* reset browser p margins for consistency */
+    position: relative;
+    padding-left: 0.875rem;    /* slightly tighter indent, matches paragraph edge better */
+  }
+
+  /* First bullet: add the same *post-title* breathing room as Overview’s first paragraph */
+  .bullet-card h2 + p {
+    margin-top: 1rem;          /* matches the perceived gap under Overview */
+  }
+
+  /* Spacing between subsequent bullets */
+  .bullet-card p + p {
+    margin-top: 0.5rem;        /* comfortable, same feel as your list spacing */
+  }
+
+  /* The dot */
+  .bullet-card p::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 0;
+    line-height: 1.5;
+    color: rgb(212 212 212);   /* neutral-300 */
   }
 }
 
-
 @layer components {
-  /* force bullet styling for project cards */
-  .card ul {
-    list-style-type: disc !important;
-    list-style-position: outside !important;
-    margin-left: 1rem !important;
-    padding-left: 0 !important;
+  main h2:first-of-type {
+    @apply mt-0;  /* remove top margin when directly following a div spacer */
   }
 }

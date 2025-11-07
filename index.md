@@ -8,9 +8,9 @@ class: home
 
 I've studied and implemented algorithmic reasoning and data-driven decision making across both industry and academia. Here are my top projects.
 
-<div class="mt-6"></div>
+<div class="mt-8"></div>
 
-<div class="grid gap-6 md:grid-cols-2 mt-6">
+<div class="grid gap-6 md:grid-cols-2 mt-8">
 {% for project in collections.projects %}
   <a href="{{ project.url }}" class="project-card">
     <h3>{{ project.data.title }}</h3>
@@ -19,11 +19,11 @@ I've studied and implemented algorithmic reasoning and data-driven decision maki
 {% endfor %}
 </div>
 
-<div class="mt-12"></div>
+<div class="mt-8"></div>
 
 ## Education
 
-<div class="education-grid">
+<div class="education-grid mb-10">
 
 <div>
 
@@ -43,6 +43,7 @@ B.Sc. in Applied Math & Computer Science
 
 </div>
 
+<!-- <br class="mb-20 block" /> -->
 
 ## Experience
 
