@@ -198,3 +198,55 @@
     @apply mt-0;  /* remove top margin when directly following a div spacer */
   }
 }
+
+@layer utilities {
+  /* --- Safe overrides: ensure these persist after Tailwind minification --- */
+
+  /* Bullet-card overrides */
+  .bullet-card {
+    @apply rounded-lg border border-neutral-700 bg-neutral-800/20 p-6 mb-6 text-neutral-300;
+  }
+
+  .bullet-card h2 {
+    @apply text-white text-xl font-semibold mt-0;
+  }
+
+  .bullet-card p {
+    @apply text-neutral-300 leading-relaxed;
+    margin: 0;
+    position: relative;
+    padding-left: 0.875rem;
+  }
+
+  .bullet-card h2 + p {
+    margin-top: 1rem;
+  }
+
+  .bullet-card p + p {
+    margin-top: 0.5rem;
+  }
+
+  .bullet-card p::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 0;
+    line-height: 1.5;
+    color: rgb(212 212 212);
+  }
+
+  /* Education grid top margin consistency */
+  .education-grid {
+    @apply mt-2 md:mt-4;
+  }
+
+  /* Experience entry spacing consistency */
+  .experience-entry {
+    @apply pt-4 mt-4 text-left;
+  }
+
+  /* Global card spacing normalization */
+  .card {
+    @apply mb-6;
+  }
+}
