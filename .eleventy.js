@@ -1,6 +1,15 @@
 const { DateTime } = require("luxon");
+let mdLib;
 
 module.exports = function (eleventyConfig) {
+    // Capture Eleventy's Markdown instance
+  eleventyConfig.amendLibrary("md", (md) => { mdLib = md; });
+
+  // Define a shortcode that re-parses inner Markdown
+  eleventyConfig.addPairedShortcode("card", (content) => {
+    return `<div class="card">${mdLib.render(content)}</div>`;
+  });
+
   // Add custom date filter
   eleventyConfig.addNunjucksFilter("date", (value, format = "yyyy") => {
     if (value === "now") {

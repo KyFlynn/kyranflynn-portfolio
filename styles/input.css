@@ -49,21 +49,17 @@
 @layer components {
   /* Content cards for project detail pages (Overview, Implementation, etc.) */
   .card {
-    @apply rounded-lg border border-neutral-700 bg-neutral-800/20 p-6 mb-6 
-           text-neutral-300; /* neutral style, no hover */
+    @apply rounded-lg border border-neutral-700 bg-neutral-800/20 p-6 mb-6 text-neutral-300;
   }
 
-  .card h2, .card h3 {
-    @apply mt-0 text-white;
-  }
+  .card h2, .card h3 { @apply mt-0 text-white; }
 
-  .card p, .card li {
-    @apply text-neutral-300 leading-relaxed;
-  }
+  /* ➜ make unordered lists actually show bullets */
+  .card ul { @apply list-disc list-outside ml-5 mt-2 space-y-1; }
 
-  .card a {
-    @apply text-neutral-300 underline font-normal hover:text-neutral-100 transition-colors duration-200;
-  }
+  .card p, .card li { @apply text-neutral-300 leading-relaxed; }
+
+  .card a { @apply text-neutral-300 underline font-normal hover:text-neutral-100 transition-colors duration-200; }
 
   /* Project cards on homepage — keep distinct visual identity */
   .project-card {
