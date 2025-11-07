@@ -154,12 +154,12 @@
   }
 }
 
-@layer components {
-  .card ul {
-    @apply list-disc list-outside ml-5 mt-2 space-y-0.5;
+@layer utilities {
+  /* ensure bullets render inside project-page cards */
+  .prose .card ul {
+    @apply list-disc list-outside pl-5 mt-2 space-y-1;
   }
-
-  .card li {
-    @apply text-neutral-300 leading-relaxed;
+  .prose .card li {
+    @apply leading-relaxed;
   }
 }
