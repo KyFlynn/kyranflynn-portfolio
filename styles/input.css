@@ -32,6 +32,29 @@
   }
 }
 
+/* contact row component styling in about page */
+@layer components {
+  .contact-row {
+    @apply mb-6 grid w-full grid-cols-3 items-center text-sm text-neutral-300;
+  }
+
+  .contact-row > :nth-child(1) {
+    @apply text-left;
+  }
+
+  .contact-row > :nth-child(2) {
+    @apply text-center;
+  }
+
+  .contact-row > :nth-child(3) {
+    @apply text-right;
+  }
+
+  .contact-row a {
+    @apply no-underline transition-colors hover:text-neutral-100;
+  }
+}
+
 @layer components {
   /* Project meta block (labels + links) */
   .meta { @apply space-y-2 mt-4 mb-8; }
@@ -90,11 +113,11 @@
     @apply flex items-baseline justify-between gap-4;
   }
 
-  .company {
+  .role {
     @apply text-white text-lg font-semibold;
   }
 
-  .role {
+  .company {
     @apply text-neutral-400 text-base mt-1 mb-2;
   }
 
