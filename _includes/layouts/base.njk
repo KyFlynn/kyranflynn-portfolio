@@ -16,12 +16,12 @@
     </nav>
   </header>
 
-  <main class="{{ class | default('') }} max-w-3xl mx-auto px-6 pt-4 pb-2 text-center">
+  <main class="max-w-3xl mx-auto px-6 pt-4 pb-2 {{ class | default('text-center') }}">
     {% block content %}{{ content | safe }}{% endblock %}
   </main>
 
   <footer class="max-w-3xl mx-auto px-6 py-10 mt-0 text-sm text-gray-500 text-center">
-    © 2025 Kyran Flynn
+    © <script>document.write(new Date().getFullYear())</script> Kyran Flynn
   </footer>
 </body>
 </html>
