@@ -48,7 +48,7 @@ BS in Applied Math & Computer Science
 
 <div class="experience-entry">
 <div class="xp-head">
-  <span class="role">Security Researcher</span>
+  <span class="role">Applied Scientist (Security)</span>
   <span class="date">Jan 2026 — now</span>
 </div>
 <div class="company">Margin Research</div>
@@ -59,7 +59,7 @@ Short-term applied data science internship in cybersecurity at [Margin Research]
 
 <div class="experience-entry">
 <div class="xp-head">
-  <span class="role">Doctoral Machine Learning Researcher</span>
+  <span class="role">Doctoral Applied Machine Learning Scientist</span>
   <span class="date">Aug 2024 — Dec 2025</span>
 </div>
 <div class="company">Columbia University, IEOR</div>
@@ -85,7 +85,7 @@ Delivered production-grade full-stack features and built a data validation frame
 
 <div class="experience-entry">
 <div class="xp-head">
-  <span class="role">Machine Learning Researcher</span>
+  <span class="role">Applied Machine Learning Scientist</span>
   <span class="date">Jan 2022 — Oct 2023</span>
 </div>
 <div class="company">Brown University, Applied Math</div>
