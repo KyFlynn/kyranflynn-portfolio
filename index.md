@@ -28,15 +28,15 @@ I've studied data-driven decision making across both industry and academia. Here
 <div>
 
 ### Columbia University
-M.Sc. in Operations Research  
-*Obtained October 2025, Qualified for Ph.D.*
+MS in Operations Research (PhD Coursework)  
+*Obtained October 2025, qualified for PhD*
 
 </div>
 
 <div>
 
 ### Brown University
-B.Sc. in Applied Math & Computer Science  
+BS in Applied Math & Computer Science  
 *Graduated with honors in May 2023*  
 
 </div>
@@ -86,11 +86,11 @@ Delivered production-grade full-stack features and built a data validation frame
 <div class="experience-entry">
 <div class="xp-head">
   <span class="role">Machine Learning Researcher</span>
-  <span class="date">Jan 2022 — Jul 2024</span>
+  <span class="date">Jan 2022 — Oct 2023</span>
 </div>
 <div class="company">Brown University, Applied Math</div>
 
-Built and deployed an end-to-end machine learning demand modeling system for dockless bike-share planning under [Prof. Alice Paul](https://alicepaul.github.io/), translating usage data into actionable guidance for local transportation policy, and received recognition as an [INFORMS Undergraduate Operations Research Prize finalist](https://www.informs.org/Recognizing-Excellence/Award-Recipients/Kyran-Flynn) for an honors thesis in the applied math department on this work.
+Built and deployed an end-to-end machine learning demand modeling system for dockless bike-share planning under [Prof. Alice Paul](https://alicepaul.github.io/), translating usage data into actionable guidance for local transportation policy, and received recognition as an [INFORMS Undergraduate Operations Research Prize finalist](https://www.informs.org/Recognizing-Excellence/Award-Recipients/Kyran-Flynn) in 2023 for an honors thesis in the applied math department on this work.
 
 </div>
 
