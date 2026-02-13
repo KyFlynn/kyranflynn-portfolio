@@ -5,7 +5,7 @@
 @layer base {
   /* markdown header and paragraph styling */
   h1 {
-    @apply text-3xl font-bold mb-6 text-left;
+    @apply text-3xl font-bold mb-6;
   }
   h2 {
     @apply text-xl font-semibold mt-4 mb-4 text-left text-neutral-100;
@@ -78,6 +78,8 @@
   .card h2, .card h3 { @apply mt-0 text-white; }
 
   .card p, .card li { @apply text-neutral-300 leading-relaxed; }
+
+  .card p + p { @apply mt-4; }
 
   .card a { @apply text-neutral-300 underline font-normal hover:text-neutral-100 transition-colors duration-200; }
 

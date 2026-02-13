@@ -1,12 +1,12 @@
 ---
-title: "Multi-Intervention Healthcare Decision Modeling"
-summary: "Built an end-to-end experimental system for multi-intervention healthcare decision modeling using reinforcement learning and graph neural networks."
+title: "Multi-Intervention Sequential Decision Modeling"
+summary: "I built an end-to-end experimental pipeline to study reinforcement learning in sequential decision settings where multiple interacting interventions must be selected simultaneously at each timestep."
 layout: layouts/project.njk
 ---
 
 <div class="meta">
   
-**Key Idea** — Built an end-to-end experimental platform for studying decision-making in multi-intervention healthcare settings, integrating synthetic data generation, reinforcement learning, and graph neural networks to enable intervention-level value estimation.
+**Overview** — I built an end-to-end experimental pipeline to study reinforcement learning in sequential decision settings where multiple interacting interventions must be selected simultaneously at each timestep. The pipeline integrates synthetic data generation, model training, controlled experimentation, and evaluation. At its core is a graph-structured reinforcement learning architecture that produces intervention-level value estimates, enabling scalable decision-making without exhaustively evaluating exponentially many intervention combinations.
 
 **Setting** — Columbia [Industrial Engineering & Operations Research](https://ieor.columbia.edu/) PhD program, advised by [Prof. Lily Xu](https://lily-x.github.io/).
 
@@ -16,26 +16,41 @@ layout: layouts/project.njk
 
 </div>
 
-<div class="card">
-  <h2>Overview</h2>
-  <p>
-  I built an end-to-end experimental system to study decision-making in healthcare settings where multiple treatment option combinations must be evaluated under limited data. The motivation was to address a common limitation of standard reinforcement learning approaches, which struggle to scale and learn reliably when the number of possible interventions grows.<br><br>
+{% card %}
+## Project
 
-  To do this, I designed and implemented reinforcement learning models that explicitly learn the relationships between interventions and system states, representing those dependencies as graphs and using graph neural networks to estimate intervention-level value functions. I supported this work with a full experimental pipeline for synthetic data generation, model training, and performance evaluation.<br><br>
+I built an end-to-end experimental pipeline to improve how reinforcement learning agents make decisions when multiple interventions must be chosen simultaneously at each timestep. The motivation came from clinical-style decision settings: at each step, a combination of treatments (e.g., drug type, intensity, frequency) must be selected, often with limited data and complex interactions between choices.
 
-  The result was a reusable experimental framework that makes complex multi-intervention decision problems tractable to study, enabling systematic evaluation of how structured representations can improve learning behavior in high-dimensional decision settings with limited data.
-  </p>
+Standard reinforcement learning struggles in these environments. As the number of intervention options grows, the action space explodes combinatorially, making learning unstable and sample-inefficient.
+
+The core idea was to exploit structure. First, I estimated a dependency graph between interventions and system state variables using regression-based methods. This produced an approximate map of how individual interventions influence the system. I then embedded this structure into a graph neural network-based Q-learning architecture. Rather than evaluating every possible intervention combination, the model incrementally constructed decisions, estimating the marginal value of each intervention conditioned on the current state and prior selections. This reframing avoids exhaustive combination evaluation, and allows each partial decision to incorporate structured information about system dynamics.
+
+To support this, I built a full experimental pipeline: synthetic data generation, model training, and controlled experimentation to evaluate performance against the standard approach.
+
+<!-- *input photo here* -->
+
+<!--
+Replace this placeholder with your PNG from /images:
+![Project figure](/images/your-photo.png)
+-->
+{% endcard %}
+
+{% card %}
+## Presentation
+
+Department presentation of this project:
+
+<div class="mt-4">
+  <iframe
+    width="100%"
+    height="420"
+    src="https://www.youtube.com/embed/M3XRnSD5bx0"
+    title="Multi-Intervention Healthcare Decision Modeling Presentation"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    loading="lazy"
+    allowfullscreen
+  ></iframe>
 </div>
-
-<!-- <div class="bullet-card">
-  <h2>Highlights</h2>
-  <p>Developed model architectures, synthetic problems, and testing framework from scratch</p>
-  <p>Each intervention (sub-action) and state variable is represented as a node in a bipartite graph</p>
-  <p>A graph neural network (GNN) propagates information between state and sub-action nodes to estimate Q-values jointly</p>
-  <p>The combinatorial optimization step for selecting the best intervention set is solved via Gurobi using the learned Q-value function</p>
-  <p>This approach enables scalable training and decision-making in environments with large binary sub-action spaces</p>
-  <p>Integrated GNN message passing into a custom Q-learning loop for multi-action reinforcement learning.</p>
-  <p>Designed a modular PyTorch Geometric training pipeline with Gurobi-based optimization for policy selection. </p>
-  <p>Demonstrated improved learning stability and faster convergence on synthetic multi-intervention testbeds.</p>
-  <p>Applied causal inference tools from the PyWhy framework to improve interpretability of learned dependencies.</p>
-</div> -->
+{% endcard %}

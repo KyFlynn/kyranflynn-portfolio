@@ -4,7 +4,7 @@ title: Portfolio
 class: home text-center
 ---
 
-# <div class="text-center">Welcome to my portfolio<span class="text-blue-600">.</span></div>
+# Welcome to my portfolio<span class="text-blue-600">.</span>
 
 I've studied data-driven decision making across both industry and academia. Here are my top disclosable projects.
 
@@ -53,7 +53,7 @@ BS in Applied Math & Computer Science
 </div>
 <div class="company">Margin Research</div>
 
-Short-term applied data science internship in cybersecurity at [Margin Research](https://margin.re/Margin).
+Short-term internship in cybersecurity at [Margin Research](https://margin.re/Margin).
 
 </div>
 
@@ -64,7 +64,7 @@ Short-term applied data science internship in cybersecurity at [Margin Research]
 </div>
 <div class="company">Columbia University, IEOR</div>
 
-Completed doctoral coursework and earned an accelerated MS in operations research in the [Industrial Engineering & Operations Research](https://ieor.columbia.edu/) department, qualifying for the PhD. Conducted research under [Prof. Lily Xu]("https://lily-x.github.io/) focused on decision-making systems for healthcare applications.<br><br>
+Completed doctoral coursework and earned an accelerated MS in operations research in the [Industrial Engineering & Operations Research](https://ieor.columbia.edu/) department, qualifying for the PhD. Conducted research under [Prof. Lily Xu](https://lily-x.github.io/) focused on decision-making systems for healthcare applications.<br><br>
 
 Built an end-to-end system for modeling and evaluating multi-intervention healthcare decisions, enabling intervention-level value estimation using reinforcement learning and mentoring a student contributor in its development.<br><br>
 
@@ -85,7 +85,7 @@ Delivered production-grade full-stack features and built a data validation frame
 
 <div class="experience-entry">
 <div class="xp-head">
-  <span class="role">Applied Machine Learning Scientist</span>
+  <span class="role">Applied Data Scientist</span>
   <span class="date">Jan 2022 — Oct 2023</span>
 </div>
 <div class="company">Brown University, Applied Math</div>
