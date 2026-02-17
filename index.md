@@ -6,7 +6,7 @@ class: home text-center
 
 # Welcome to my portfolio<span class="text-blue-600">.</span>
 
-I've studied and implemented automated reasoning in both academia and tech. 
+I've studied and implemented automated reasoning in both tech and academia. 
 
 Here are my top projects.
 
@@ -25,7 +25,7 @@ Here are my top projects.
     <h3>{{ project.title }}</h3>
     <p>{{ project.summary }}</p>
     <p class="mt-3 text-xs tracking-wide text-neutral-400">
-      {% if project.company %}{{ project.company }} NDA: Details Unavailable{% else %}NDA: Details Unavailable{% endif %}
+      {% if project.company %}Under {{ project.company }} NDA{% else %}Under NDA{% endif %}
     </p>
   </div>
 {% endfor %}

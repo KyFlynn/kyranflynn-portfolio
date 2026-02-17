@@ -50,5 +50,4 @@ homepageOrder: 2
   ![optimized-initial-capacity](/images/optimized-initial-capacity.png)
 
   I am grateful to have been recognized as a finalist for the INFORMS Undergraduate Operations Research Prize in 2023 for this work!
-  </p>
 </div>
