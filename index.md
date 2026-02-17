@@ -6,7 +6,9 @@ class: home text-center
 
 # Welcome to my portfolio<span class="text-blue-600">.</span>
 
-I've studied data-driven decision making across both industry and academia. Here are my top disclosable projects.
+I've studied and implemented automated reasoning across both academia and tech. 
+
+Here are my top (disclosable) projects.
 
 <div class="mt-8"></div>
 
@@ -64,7 +66,7 @@ Short-term internship in cybersecurity at [Margin Research](https://margin.re/Ma
 </div>
 <div class="company">Columbia University, IEOR</div>
 
-Completed doctoral coursework and earned an accelerated MS in operations research in the [Industrial Engineering & Operations Research](https://ieor.columbia.edu/) department, qualifying for the PhD. Conducted research under [Prof. Lily Xu](https://lily-x.github.io/) focused on decision-making systems for healthcare applications.<br><br>
+Completed doctoral coursework and earned an accelerated MS in operations research in the [IEOR](https://ieor.columbia.edu/) department, qualifying for the PhD. Conducted research under [Prof. Lily Xu](https://lily-x.github.io/) focused on decision-making systems for healthcare applications.<br><br>
 
 Built an end-to-end system for modeling and evaluating multi-intervention healthcare decisions, enabling intervention-level value estimation using reinforcement learning and mentoring a student contributor in its development.<br><br>
 

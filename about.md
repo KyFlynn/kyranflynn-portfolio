@@ -24,7 +24,7 @@ class: text-left
 
 My work includes building predictive demand models to inform transit policy, deploying learning agents and production data validation systems at Amazon, and in doctoral research constructing an experimental platform to improve clinical treatment selection.<br><br>
 
-After completing doctoral coursework and qualifying for a PhD in operations research at Columbia, I'm looking for industry experience with my master's in hand. I'm seeking full-time roles focused on turning complex models and data into dependable, high-impact systems.
+After completing doctoral coursework in operations research at Columbia, I'm seeking engineering roles focused on turning complex models and data into dependable, high-impact systems.
 
 <div class="mt-12"></div>
 
