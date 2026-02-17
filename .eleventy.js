@@ -39,9 +39,15 @@ module.exports = function (eleventyConfig) {
   // Ensure Tailwind output gets copied to the final site
   eleventyConfig.addPassthroughCopy("styles");
 
-  // Create a collection for all project files
-  eleventyConfig.addCollection("projects", function(collectionApi) {
-    return collectionApi.getFilteredByGlob("projects/*.md");
+  // Create a deterministic, manually ordered collection for homepage cards
+  eleventyConfig.addCollection("projects", function (collectionApi) {
+    const projects = collectionApi.getFilteredByGlob("projects/*.md");
+    return projects.sort((a, b) => {
+      const aOrder = Number.isFinite(a.data.homepageOrder) ? a.data.homepageOrder : Number.MAX_SAFE_INTEGER;
+      const bOrder = Number.isFinite(b.data.homepageOrder) ? b.data.homepageOrder : Number.MAX_SAFE_INTEGER;
+      if (aOrder !== bOrder) return aOrder - bOrder;
+      return a.fileSlug.localeCompare(b.fileSlug);
+    });
   });
 
   // Copy styles to output

@@ -24,7 +24,9 @@ Here are my top projects.
   <div class="project-card hover:border-blue-600/30 hover:translate-y-0 transition-none cursor-default" aria-label="{{ project.title }} (NDA project)" aria-disabled="true">
     <h3>{{ project.title }}</h3>
     <p>{{ project.summary }}</p>
-    <p class="mt-3 text-xs tracking-wide text-neutral-400">NDA: Details Unavailable</p>
+    <p class="mt-3 text-xs tracking-wide text-neutral-400">
+      {% if project.company %}{{ project.company }} NDA: Details Unavailable{% else %}NDA: Details Unavailable{% endif %}
+    </p>
   </div>
 {% endfor %}
 </div>

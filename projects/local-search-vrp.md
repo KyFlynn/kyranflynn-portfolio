@@ -2,6 +2,7 @@
 title: "Disturbance-Based Local Search for VRPs"
 summary: "Built a top-performing solver using a disturbance-based local search approach that used local information to solve large-scale vehicle routing problems."
 layout: layouts/project.njk
+homepageOrder: 3
 ---
 
 <div class="meta">

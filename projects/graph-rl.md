@@ -2,6 +2,7 @@
 title: "Multi-Intervention Sequential Decision Modeling"
 summary: "Built an end-to-end experimental pipeline to study reinforcement learning in sequential decision settings where multiple interacting interventions must be selected in combination at each timestep."
 layout: layouts/project.njk
+homepageOrder: 1
 ---
 
 <div class="meta">

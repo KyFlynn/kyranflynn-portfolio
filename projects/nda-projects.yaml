@@ -3,3 +3,4 @@
 
 - title: "Dynamic Speech-to-Text Parameters for Alexa"
   summary: "Implemented reinforcement learning agents to dynamically set key search parameters in Alexa's speech-to-text pipeline and reduced latency by 30%."
+  company: "Amazon"

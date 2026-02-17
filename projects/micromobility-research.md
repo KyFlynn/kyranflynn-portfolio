@@ -2,6 +2,7 @@
 title: "Demand Estimation for Dockless Bike-Share"
 summary: "Built an end-to-end machine learning system to estimate demand for dockless bike-share from censored usage data, supporting city planners on bike-share policy decisions."
 layout: layouts/project.njk
+homepageOrder: 2
 ---
 
 <div class="meta">
