@@ -6,9 +6,9 @@ class: home text-center
 
 # Welcome to my portfolio<span class="text-blue-600">.</span>
 
-I've studied and implemented automated reasoning across both academia and tech. 
+I've studied and implemented automated reasoning in both academia and tech. 
 
-Here are my top (disclosable) projects.
+Here are my top projects.
 
 <div class="mt-8"></div>
 
@@ -18,6 +18,14 @@ Here are my top (disclosable) projects.
     <h3>{{ project.data.title }}</h3>
     <p>{{ project.data.summary }}</p>
   </a>
+{% endfor %}
+
+{% for project in ndaProjects %}
+  <div class="project-card hover:border-blue-600/30 hover:translate-y-0 transition-none cursor-default" aria-label="{{ project.title }} (NDA project)" aria-disabled="true">
+    <h3>{{ project.title }}</h3>
+    <p>{{ project.summary }}</p>
+    <p class="mt-3 text-xs tracking-wide text-neutral-400">NDA: Details Unavailable</p>
+  </div>
 {% endfor %}
 </div>
 
