@@ -86,8 +86,11 @@
   /* Project cards on homepage — keep distinct visual identity */
   .project-card {
     @apply block rounded-xl border border-blue-600/30 bg-neutral-800/40 p-6 text-center 
-           hover:border-blue-600/60 hover:-translate-y-0.5 transition duration-300 
-           text-neutral-100 hover:shadow-none;
+           text-neutral-100;
+  }
+
+  .project-card {
+    @apply hover:border-blue-600/60 hover:-translate-y-0.5 transition duration-300 hover:shadow-none;
   }
 
   .project-card h3 {
