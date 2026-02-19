@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <title>Portfolio</title>
-  <link rel="stylesheet" href="/styles/output.css?v=1771339300">
+  <link rel="icon" type="image/png" sizes="48x48" href="/images/favicon-48x48.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/images/favicon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="stylesheet" href="/styles/output.css?v=1771525456">
 </head>
 <body class="bg-neutral-900 text-neutral-100 font-sans">
   <header class="max-w-3xl mx-auto px-6 py-8 flex justify-between items-center">
@@ -17,9 +20,18 @@
   </header>
 
   <main class="max-w-3xl mx-auto px-6 pt-4 pb-2 home text-center">
-    <h1>Welcome to my portfolio<span class="text-blue-600">.</span></h1>
-<p>I've studied and implemented automated reasoning in both tech and academia.</p>
-<p>Here are my top projects.</p>
+    <div class="mx-auto mb-6 flex w-full max-w-3xl flex-col items-center gap-4 sm:flex-row sm:items-center sm:justify-center sm:gap-8">
+  <div>
+    <h1 class="mb-4">Welcome to my portfolio<span class="text-blue-600">.</span></h1>
+    <p>I've studied and implemented automated reasoning in both tech and academia.</p>
+    <p>Here are my top projects.</p>
+  </div>
+  <img
+    src="/images/portfolio-headshot.jpg"
+    alt="Kyran Flynn headshot"
+    class="h-24 w-24 shrink-0 rounded-full border-2 border-white/80 object-cover sm:h-28 sm:w-28"
+  >
+</div>
 <div class="mt-8"></div>
 <div class="grid gap-6 md:grid-cols-2 mt-8">
   <a href="/projects/graph-rl/" class="project-card">
@@ -32,11 +44,18 @@
   </a>
   <a href="/projects/local-search-vrp/" class="project-card">
     <h3>Disturbance-Based Local Search for VRPs</h3>
-    <p>Built a top-performing solver using a disturbance-based local search approach that used local information to solve large-scale vehicle routing problems.</p>
+    <p>Built a top-performing, large-scale vehicle routing problem solver using a disturbance-based local search approach I designed.</p>
   </a>
   <div class="project-card hover:border-blue-600/30 hover:translate-y-0 transition-none cursor-default" aria-label="Dynamic Speech-to-Text Parameters for Alexa (NDA project)" aria-disabled="true">
     <h3>Dynamic Speech-to-Text Parameters for Alexa</h3>
     <p>Implemented reinforcement learning agents to dynamically set key search parameters in Alexa's speech-to-text pipeline and reduced latency by 30%.</p>
+    <p class="mt-3 text-xs tracking-wide text-neutral-400">
+      Under Amazon NDA
+    </p>
+  </div>
+  <div class="project-card hover:border-blue-600/30 hover:translate-y-0 transition-none cursor-default" aria-label="Data Validation for International Software Release (NDA project)" aria-disabled="true">
+    <h3>Data Validation for International Software Release</h3>
+    <p>Built a data validation framework ensuring incoming hirees were up to date with country-specific rules for a 90% load increase, international hiring software release.</p>
     <p class="mt-3 text-xs tracking-wide text-neutral-400">
       Under Amazon NDA
     </p>

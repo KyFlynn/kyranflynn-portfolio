@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <title>Demand Estimation for Dockless Bike-Share</title>
-  <link rel="stylesheet" href="/styles/output.css?v=1771339300">
+  <link rel="icon" type="image/png" sizes="48x48" href="/images/favicon-48x48.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/images/favicon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="stylesheet" href="/styles/output.css?v=1771525456">
 </head>
 <body class="bg-neutral-900 text-neutral-100 font-sans">
   <header class="max-w-3xl mx-auto px-6 py-8 flex justify-between items-center">
@@ -36,8 +39,8 @@
 <p><strong>Tech Stack</strong> — <a href="https://pandas.pydata.org/">Pandas</a>, <a href="https://numpy.org/">NumPy</a>, <a href="https://scipy.org/">SciPy</a>, <a href="https://shiny.posit.co/py/">Shiny for Python</a>, <a href="https://python-visualization.github.io/folium/">Folium</a>.</p>
 </div>
 <div class="card">
-  <h2>Overview</h2>
-  Cities such as Providence, RI rely on bike-share trip data that provides an incomplete signal of true rider demand. If someone opens the app and no bike is nearby, no trip is observed. If a rider walks several blocks before starting a ride, the recorded location only reflects nearby demand.
+  <h2>Bike-Share Demand Model</h2>
+<p>Cities such as Providence, RI rely on bike-share trip data that provides an incomplete signal of true rider demand. If someone opens the app and no bike is nearby, no trip is observed. If a rider walks several blocks before starting a ride, the recorded location only reflects nearby demand.</p>
 <p>To plan fleet size, rebalancing strategies, or set equity requirements, a city needs to know where riders are truly coming from.<br><br></p>
   <h3>Approach</h3>
 <p>Instead of treating observed trips as true demand, we model demand as a hidden spatial and temporal arrival process. We divide the city into grid cells, model how riders most likely behave when they look for a bike (for example, choosing the nearest one), and treat each recorded trip as the result of both user intent and local bike availability.</p>

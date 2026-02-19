@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <title>Disturbance-Based Local Search for VRPs</title>
-  <link rel="stylesheet" href="/styles/output.css?v=1771339300">
+  <link rel="icon" type="image/png" sizes="48x48" href="/images/favicon-48x48.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/images/favicon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="stylesheet" href="/styles/output.css?v=1771525456">
 </head>
 <body class="bg-neutral-900 text-neutral-100 font-sans">
   <header class="max-w-3xl mx-auto px-6 py-8 flex justify-between items-center">
@@ -27,16 +30,27 @@
 
     <div class="prose prose-invert max-w-none">
       <div class="meta">
-<p><strong>Overview</strong> — I built a solver that iteratively constructed greedy solutions and then disturbed them to solve large-scale vehicle routing problems. The solver leveraged a simple proxy of local surface information to avoid getting stuck in local minima, and was top-performing in the class competition in both speed and solution quality.</p>
+<p><strong>Overview</strong> — I built a solver that iteratively constructs greedy solutions and then disturbs them to solve large-scale vehicle routing problems. I designed it such that the solver memorizes local surface information to avoid getting stuck in local minima, and the result was top-performing in a competition in both solving speed and solution quality.</p>
 <p><strong>Setting</strong> — Brown <a href="https://cs.brown.edu/">Computer Science</a>.</p>
 <p><strong>Github</strong> — <a href="https://github.com/KyFlynn/vrp-local-search">vrp-local-search</a>.</p>
 <p><strong>Language</strong> — Java.</p>
 <p><strong>Tech Stack</strong> — <a href="https://www.ibm.com/products/ilog-cplex-optimization-studio">IBM CPLEX</a>.</p>
 </div>
-<!-- <div class="card">
-  <h2>Overview</h2>
-  Add
-</div> -->
+<div class="card">
+  <h2>VRP Solver</h2>
+<p>The vehicle routing problem (VRP) requires solving for the most cost-effective way of delivering goods using trucks departing from a central depot to a set of customers.</p>
+<p><img src="/images/local-search-vrp-drawing-1.jpg" alt="vrp-problem"></p>
+<p>I built a solver for this problem with a classmate for a competition looking at both solving speed and solution quality. If the problem was small enough, we would find an optimal solution using IBM CPLEX modeling. Otherwise, we used a local search approach I designed.</p>
+<p>Local search is a method in which you consider improving your solution by looking at its neighbors. The 'neighborhood' is what makes it local. Here, the neighbors I considered are solutions in which a customer is relocated, or in which two customers are swapped, both within any of the current routes.</p>
+<p>There are many ways to go about local search. I chose a simple design, but added one key idea.<br><br></p>
+  <h2>Approach</h2>
+<p>I chose to use greedy local search, where at each step we choose the neighbor that improves the solution the most. Once we get stuck, we disturb the solution with random relocation and swaps. The greedy approach is dangerous — the optimal solution often involves iterating through worse solutions, not the local best.</p>
+<p>However, I figured a greedy approach actually provides useful local information. Suppose we keep getting stuck in the same solutions, say solution (1).</p>
+<p><img src="/images/local-search-vrp-drawing-2.jpg" alt="local-search-stuck"></p>
+<p>By keeping track, we can tell we are stuck in a local surface, and can begin increasing solution disturbance. This brings us into new solution spaces, and eventually into much better solutions, such as (4).</p>
+<p><img src="/images/local-search-vrp-drawing-3.jpg" alt="local-search-global-min"></p>
+<p>I implemented this idea efficiently by using objective values solution proxies, and turned the simplest local search method into a top perfomer.</p>
+</div>
     </div>
   </div>
 
