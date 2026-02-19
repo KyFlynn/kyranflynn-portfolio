@@ -4,11 +4,18 @@ title: Portfolio
 class: home text-center
 ---
 
-# Welcome to my portfolio<span class="text-blue-600">.</span>
-
-I've studied and implemented automated reasoning in both tech and academia. 
-
-Here are my top projects.
+<div class="mx-auto mb-6 flex w-full max-w-3xl flex-col items-center gap-4 sm:flex-row sm:items-center sm:justify-center sm:gap-8">
+  <div>
+    <h1 class="mb-4">Welcome to my portfolio<span class="text-blue-600">.</span></h1>
+    <p>I've studied and implemented automated reasoning in both tech and academia.</p>
+    <p>Here are my top projects.</p>
+  </div>
+  <img
+    src="/images/portfolio-headshot.jpg"
+    alt="Kyran Flynn headshot"
+    class="h-24 w-24 shrink-0 rounded-full border-2 border-white/80 object-cover sm:h-28 sm:w-28"
+  >
+</div>
 
 <div class="mt-8"></div>
 

@@ -4,3 +4,7 @@
 - title: "Dynamic Speech-to-Text Parameters for Alexa"
   summary: "Implemented reinforcement learning agents to dynamically set key search parameters in Alexa's speech-to-text pipeline and reduced latency by 30%."
   company: "Amazon"
+
+- title: "Data Validation for International Software Release"
+  summary: "Built a data validation framework ensuring incoming hirees were up to date with country-specific rules for a 90% load increase, international hiring software release."
+  company: "Amazon"

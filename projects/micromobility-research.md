@@ -24,7 +24,8 @@ homepageOrder: 2
 </div>
 
 <div class="card">
-  <h2>Overview</h2>
+  <h2>Bike-Share Demand Model</h2>
+  
   Cities such as Providence, RI rely on bike-share trip data that provides an incomplete signal of true rider demand. If someone opens the app and no bike is nearby, no trip is observed. If a rider walks several blocks before starting a ride, the recorded location only reflects nearby demand.
   
   To plan fleet size, rebalancing strategies, or set equity requirements, a city needs to know where riders are truly coming from.<br><br>
