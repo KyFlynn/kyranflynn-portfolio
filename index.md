@@ -7,7 +7,7 @@ class: home text-center
 <div class="mx-auto mb-6 flex w-full max-w-3xl flex-col items-center gap-4 sm:flex-row sm:items-center sm:justify-center sm:gap-8">
   <div>
     <h1 class="mb-4">Welcome to my portfolio<span class="text-blue-600">.</span></h1>
-    <p>I've studied and implemented automated reasoning in both tech and academia.</p>
+    <p>I've studied and implemented automated decision making in both tech and academia.</p>
     <p>Here are my top projects.</p>
   </div>
   <img
