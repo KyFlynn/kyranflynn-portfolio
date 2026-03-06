@@ -1,5 +1,5 @@
 ---
-title: "Disturbance-Based Local Search for VRPs"
+title: "Large-Scale Vehicle Routing Optimization Solver"
 summary: "Built a top-performing, large-scale vehicle routing problem solver using a disturbance-based local search approach I designed."
 layout: layouts/project.njk
 homepageOrder: 3
