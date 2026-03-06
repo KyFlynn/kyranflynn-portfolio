@@ -66,7 +66,7 @@ BS in Applied Math & Computer Science
 
 <div class="experience-entry">
 <div class="xp-head">
-  <span class="role">Applied Scientist (Security)</span>
+  <span class="role">Machine Learning Engineer</span>
   <span class="date">Jan 2026 — now</span>
 </div>
 <div class="company">Margin Research</div>
@@ -77,7 +77,7 @@ Short-term internship in cybersecurity at [Margin Research](https://margin.re/Ma
 
 <div class="experience-entry">
 <div class="xp-head">
-  <span class="role">Doctoral Applied Machine Learning Scientist</span>
+  <span class="role">Doctoral Machine Learning Researcher</span>
   <span class="date">Aug 2024 — Dec 2025</span>
 </div>
 <div class="company">Columbia University, IEOR</div>
@@ -92,7 +92,7 @@ Served as Head Teaching Assistant for a graduate machine learning course (70+ st
 
 <div class="experience-entry">
 <div class="xp-head">
-  <span class="role">Software Development Engineer</span>
+  <span class="role">Software Engineer</span>
   <span class="date">Jan 2024 — Jul 2024</span>
 </div>
 <div class="company">Amazon, PXT</div>
@@ -103,7 +103,7 @@ Delivered production-grade full-stack features and built a data validation frame
 
 <div class="experience-entry">
 <div class="xp-head">
-  <span class="role">Applied Data Scientist</span>
+  <span class="role">Machine Learning Researcher</span>
   <span class="date">Jan 2022 — Oct 2023</span>
 </div>
 <div class="company">Brown University, Applied Math</div>
@@ -114,7 +114,7 @@ Built and deployed an end-to-end machine learning demand modeling system for doc
 
 <div class="experience-entry">
 <div class="xp-head">
-  <span class="role">Software Development Engineer</span>
+  <span class="role">Applied Scientist Intern</span>
   <span class="date">May 2022 — Aug 2022</span>
 </div>
 <div class="company">Amazon, Alexa</div>
