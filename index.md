@@ -66,7 +66,7 @@ BS in Applied Math & Computer Science
 
 <div class="experience-entry">
 <div class="xp-head">
-  <span class="role">Machine Learning Engineer</span>
+  <span class="role">Data Scientist</span>
   <span class="date">Jan 2026 — now</span>
 </div>
 <div class="company">Margin Research</div>
