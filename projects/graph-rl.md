@@ -20,6 +20,26 @@ homepageOrder: 1
 </div>
 
 <div class="card">
+  <h2>Presentation</h2>
+
+  Department presentation of this project:
+
+  <div class="mt-4">
+    <iframe
+      width="100%"
+      height="420"
+      src="https://www.youtube.com/embed/M3XRnSD5bx0"
+      title="Multi-Intervention Decision Modeling Presentation"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      loading="lazy"
+      allowfullscreen
+    ></iframe>
+  </div>
+</div>
+
+<div class="card">
   <h2>Sequential Decision Model</h2>
 
   I built an end-to-end experimental pipeline to improve how reinforcement learning agents make decisions when multiple interventions must be chosen in combination at each timestep. The motivation came from clinical-style decision settings where at each step, a combination of treatments (e.g., drug type, intensity, frequency) must be selected, often with limited data.
@@ -41,24 +61,4 @@ homepageOrder: 1
   We repeat this process until a choice has been made for all interventions, and this concludes decision making for one timestep.
 
   This reframing avoids exhaustive combination evaluation, and allows each partial decision to incorporate structured information about system dynamics. To support this, I built a full experimental pipeline: synthetic data generation, model training, and controlled experimentation to evaluate performance against the standard approach.
-</div>
-
-<div class="card">
-  <h2>Presentation</h2>
-
-  Department presentation of this project:
-
-  <div class="mt-4">
-    <iframe
-      width="100%"
-      height="420"
-      src="https://www.youtube.com/embed/M3XRnSD5bx0"
-      title="Multi-Intervention Decision Modeling Presentation"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      referrerpolicy="strict-origin-when-cross-origin"
-      loading="lazy"
-      allowfullscreen
-    ></iframe>
-  </div>
 </div>
