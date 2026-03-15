@@ -20,11 +20,11 @@ class: text-left
 
 <div class="mt-12"></div>
 
-**About me:** I work on using data, machine learning, and optimization to improve complex decision-making—building models that guide action.<br><br>
+**About me:** My work combines applied modeling with production software: designing algorithms, building experimentation frameworks, and deploying systems that translate data into decisions. At Amazon Alexa, I developed reinforcement learning models that dynamically tuned search parameters in the speech-to-text pipeline, reducing latency by 30%.
 
-My work includes building predictive demand models to inform transit policy, deploying learning agents and production data validation systems at Amazon, and in doctoral research constructing an experimental platform to improve clinical treatment selection.<br><br>
+I’ve also built demand estimation models used for transportation policy analysis, production data validation systems supporting large-scale software launches at Amazon, and experimental platforms for sequential decision-making problems involving multiple interacting interventions.
 
-After completing doctoral coursework in operations research at Columbia, I'm seeking engineering roles focused on turning complex models and data into dependable, high-impact systems.
+After completing doctoral coursework and earning a master’s in Operations Research at Columbia, I’m interested in building systems that turn complex models and data into reliable tools for understanding patterns and guiding decisions.
 
 <div class="mt-12"></div>
 
