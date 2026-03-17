@@ -66,12 +66,12 @@ BS in Applied Math & Computer Science
 
 <div class="experience-entry">
 <div class="xp-head">
-  <span class="role">Data Scientist</span>
+  <span class="role">Machine Learning Engineer</span>
   <span class="date">Jan 2026 — now</span>
 </div>
 <div class="company">Margin Research</div>
 
-Short-term internship in cybersecurity at [Margin Research](https://margin.re/Margin).
+Cybersecurity contractor at [Margin Research](https://margin.re/Margin).
 
 </div>
 
